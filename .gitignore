@@ -1,0 +1,17 @@
+# Byte-compiled/ optimized / DLL files
+*__pycache__
+*.pyc
+
+# Unit test / coverage reports
+.coverage
+.cache
+
+# OS and editor files
+.DS_Store
+
+# Environment
+.env
+env.example
+
+# Secrets
+local.py
