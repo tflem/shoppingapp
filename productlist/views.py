@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Product
 
 def index(request):
-    return HttpResponse('Hello, world. You\'re at the productlist index!')
-
-# Create your views here.
+    number_of_products = Product.objects.all().count()
+    context = {'number_of_products': number_of_products}
+    return render(request, 'index.html', context)
