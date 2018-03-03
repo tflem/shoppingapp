@@ -1,0 +1,18 @@
+{% extends "base_page.html" %}
+
+{% block title %}<title>Shopping App Index</title>{% endblock %}
+
+{% block content %}
+<h1>Shopping App Home</h1>
+
+  <p>Welcome to <em>The Shopping App</em>, a very basic Django application
+     developed as an example.</p>
+
+<h2>Dynamic Content</h2>
+
+  <p>The product list has the following record counts:</p>
+  <ul>
+    <li><strong>Items:</strong> {{ number_of_products }}</li>
+  </ul>
+
+{% endblock %}
