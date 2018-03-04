@@ -8,7 +8,7 @@
 
       {% for product in product_list %}
       <li>
-        <a href="/productlist/product/{{product.id}}">{{ product.item }}</a>
+        <a href="{% url 'product-detail' product.pk %}">{{ product.item }}</a>
          - ({{ product.quantity }})
       </li>
       {% endfor %}
