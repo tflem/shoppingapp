@@ -23,8 +23,7 @@
       {% block sidebar %}
       <ul class="sidebar-nav">
           <li><a href="{% url 'index' %}">Home</a></li>
-          <li><a href="">Add Items</a></li>
-          <!-- Add link to show all products -->
+          <li><a href="{% url 'product-new' %}">Add Items</a></li>
           <li><a href="{% url 'products' %}">Show All Items</a></li>
       </ul>
      {% endblock %}
